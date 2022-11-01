@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "year_and_month": "2022-01",
+      "Pages": "3",
+      "version": "1.07"
+    },
+    {
+      "year_and_month": "2022-01",
+      "Pages": "7",
+      "version": "1.08"
+    },
+    {
+      "year_and_month": "2022-02",
+      "Pages": "10",
+      "version": "1.07"
+    },
+    {
+      "year_and_month": "2022-02",
+      "Pages": "2",
+      "version": "1.08"
+    },
+    {
+      "year_and_month": "2022-03",
+      "Pages": "12",
+      "version": "1.07"
+    },
+    {
+      "year_and_month": "2022-03",
+      "Pages": "11",
+      "version": "1.08"
+    },
+    {
+      "year_and_month": "2022-03",
+      "Pages": "14",
+      "version": "1.09"
+    }
+]
+}

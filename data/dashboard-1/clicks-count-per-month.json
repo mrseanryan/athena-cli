@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "year_and_month": "2022-01",
+      "Clicks": "5",
+      "version": "1.07"
+    },
+    {
+      "year_and_month": "2022-01",
+      "Clicks": "7",
+      "version": "1.08"
+    },
+    {
+      "year_and_month": "2022-02",
+      "Clicks": "4",
+      "version": "1.07"
+    },
+    {
+      "year_and_month": "2022-02",
+      "Clicks": "5",
+      "version": "1.08"
+    },
+    {
+      "year_and_month": "2022-03",
+      "Clicks": "3",
+      "version": "1.07"
+    },
+    {
+      "year_and_month": "2022-03",
+      "Clicks": "4",
+      "version": "1.08"
+    },
+    {
+      "year_and_month": "2022-03",
+      "Clicks": "9",
+      "version": "1.09"
+    }
+]
+}

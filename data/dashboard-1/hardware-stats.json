@@ -1,0 +1,116 @@
+{
+    "data": [
+        {
+            "os_name_short": "Microsoft Windows 10",
+            "ram_size_gb": "4",
+            "ui_culture": "en-IN",
+            "number_of_screens": "1",
+            "processor_count": "8",
+            "screen_width_rounded_to_nearest_100": "1900"
+          },
+          {
+            "os_name_short": "Microsoft Windows 10",
+            "ram_size_gb": "8",
+            "ui_culture": "en-US",
+            "number_of_screens": "1",
+            "processor_count": "4",
+            "screen_width_rounded_to_nearest_100": "1400"
+          },
+          {
+            "os_name_short": "Microsoft Windows 11",
+            "ram_size_gb": "16",
+            "ui_culture": "nl-NL",
+            "number_of_screens": "2",
+            "processor_count": "12",
+            "screen_width_rounded_to_nearest_100": "3400"
+          },
+          {
+            "os_name_short": "Microsoft Windows 10",
+            "ram_size_gb": "32",
+            "ui_culture": "nl-NL",
+            "number_of_screens": "3",
+            "processor_count": "12",
+            "screen_width_rounded_to_nearest_100": "1900"
+          },
+          {
+            "os_name_short": "Microsoft Windows 10",
+            "ram_size_gb": "32",
+            "ui_culture": "nl-NL",
+            "number_of_screens": "3",
+            "processor_count": "14",
+            "screen_width_rounded_to_nearest_100": "3800"
+          },
+          {
+            "os_name_short": "Microsoft Windows 10",
+            "ram_size_gb": "8",
+            "ui_culture": "en-US",
+            "number_of_screens": "2",
+            "processor_count": "4",
+            "screen_width_rounded_to_nearest_100": "1900"
+          },
+          {
+            "os_name_short": "Microsoft Windows 10",
+            "ram_size_gb": "64",
+            "ui_culture": "en-US",
+            "number_of_screens": "2",
+            "processor_count": "8",
+            "screen_width_rounded_to_nearest_100": "3200"
+          },
+          {
+            "os_name_short": "Microsoft Windows 10",
+            "ram_size_gb": "10",
+            "ui_culture": "pt-BR",
+            "number_of_screens": "1",
+            "processor_count": "6",
+            "screen_width_rounded_to_nearest_100": "1900"
+          },
+          {
+            "os_name_short": "Microsoft Windows 11",
+            "ram_size_gb": "32",
+            "ui_culture": "en-US",
+            "number_of_screens": "4",
+            "processor_count": "12",
+            "screen_width_rounded_to_nearest_100": "1900"
+          },
+          {
+            "os_name_short": "Microsoft Windows 10",
+            "ram_size_gb": "24",
+            "ui_culture": "en-US",
+            "number_of_screens": "1",
+            "processor_count": "3",
+            "screen_width_rounded_to_nearest_100": "1900"
+          },
+          {
+            "os_name_short": "Microsoft Windows 10",
+            "ram_size_gb": "8",
+            "ui_culture": "pt-BR",
+            "number_of_screens": "2",
+            "processor_count": "8",
+            "screen_width_rounded_to_nearest_100": "1900"
+          },
+          {
+            "os_name_short": "Microsoft Windows 10",
+            "ram_size_gb": "4",
+            "ui_culture": "en-US",
+            "number_of_screens": "1",
+            "processor_count": "4",
+            "screen_width_rounded_to_nearest_100": "2700"
+          },
+          {
+            "os_name_short": "Microsoft Windows 11",
+            "ram_size_gb": "32",
+            "ui_culture": "en-US",
+            "number_of_screens": "2",
+            "processor_count": "16",
+            "screen_width_rounded_to_nearest_100": "3800"
+          },
+          {
+            "os_name_short": "Microsoft Windows 10",
+            "ram_size_gb": "16",
+            "ui_culture": "en-US",
+            "number_of_screens": "1",
+            "processor_count": "8",
+            "screen_width_rounded_to_nearest_100": "1900"
+          }
+    ]
+}
