@@ -27,7 +27,7 @@ AWS_S3_OUT_PATH="s3://my-query-results/my-workgroup/my-account"
 
 ## Dependencies
 
-- AWS environment with Athena database
+- AWS environment with [Athena](https://aws.amazon.com/athena) database
 - [Python and dependencies](src/python/README.md)
 - [SQL dependencies](src/python/README.md)
 

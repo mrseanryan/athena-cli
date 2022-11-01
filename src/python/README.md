@@ -23,4 +23,4 @@ Check the charts:
 - that they look OK
 - they have data for the previous month (NOT usually this month, since that would be a partial month).
 
-tip: if you use git to push to a branch, then in `gitlab` you can see a diff of the charts before/after.
+tip: if you use git to push to a branch, then in `github` you can see a diff of the charts before/after.
