@@ -68,6 +68,8 @@ OR more seriously if the Athena environment you are accessing does not allow tha
 - AWS CLI - simple, can decide what command to run (important for permissions)
 ref = https://sysadmins.co.za/using-the-aws-cli-tools-to-interact-with-amazons-athena-service/
 
+- AWS CLI - [Amazon Athena Commands](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/athena/index.html) via the AWS CLI (command line) tool
+
 - python boto - setup first via cli
 
 https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html
@@ -85,8 +87,7 @@ https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/at
 https://github.com/awsdocs/aws-doc-sdk-examples
 
 
-# References
+## Further reading
 
-- [Amazon Athena Commands](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/athena/index.html) via the AWS CLI (command line) tool
 - my blog post about [Reading data from Athena](https://antipatterns.blogspot.com/2022/11/reading-data-from-athena-via-command.html) via the command line
 - another blog post about [diagnosing access denied or insufficient permissions](https://antipatterns.blogspot.com/2022/11/amazon-athena-tip-access-denied-or.html) to access Athena (UnrecognisedClientException)
