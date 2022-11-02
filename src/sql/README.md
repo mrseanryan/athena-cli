@@ -8,7 +8,7 @@ The JSON files are later processed with the [the Python scripts](../python/READM
 
 ## Automatic (scripted) Execution
 
-0. Install AWS CLI tool
+0. Install the [AWS CLI tool](https://aws.amazon.com/cli/)
 
 Create the appropriate credentials file.
 
