@@ -78,7 +78,7 @@ https://docs.aws.amazon.com/athena/latest/ug/connect-with-jdbc.html
 
 https://docs.aws.amazon.com/athena/latest/ug/code-samples.html#create-a-client-to-access-athena
 
-- AWS sdk
+- AWS SDK
 
 https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/athena
 
