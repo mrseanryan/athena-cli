@@ -52,7 +52,7 @@ The Python charting scripts can be executed via [the Python scripts](../python/R
 
 1 - why not use Python library X instead of the AWS CLI?
 
-An advantage of the AWS CLI is that we can decide which Athena REST API call to invoke. This can be important if you are working against a 3rd party Athena database, or an Athena database with restricted access.
+An advantage of the AWS CLI is that we can decide which [Athena REST API call](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/athena/index.html) to invoke. This can be important if you are working against a 3rd party Athena database, or an Athena database with restricted access.
 
 2 - UnrecognizedClientException when querying Athena.
 
@@ -83,3 +83,10 @@ https://docs.aws.amazon.com/athena/latest/ug/code-samples.html#create-a-client-t
 https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/athena
 
 https://github.com/awsdocs/aws-doc-sdk-examples
+
+
+# References
+
+- [Amazon Athena Commands](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/athena/index.html) via the AWS CLI (command line) tool
+- my blog post about [Reading data from Athena](https://antipatterns.blogspot.com/2022/11/reading-data-from-athena-via-command.html) via the command line
+- another blog post about [diagnosing access denied or insufficient permissions](https://antipatterns.blogspot.com/2022/11/amazon-athena-tip-access-denied-or.html) to access Athena (UnrecognisedClientException)
