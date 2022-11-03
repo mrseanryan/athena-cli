@@ -23,9 +23,7 @@ def nullRowFilter(_):
 	return True
 
 def create_pie_for(title, short_title, column, chart_filename, row_filter = nullRowFilter):
-	fig, ax = plt.subplots(figsize=(15,7))
-	ax.set_title(title)
-
+	# === Prepare the data, aggregating by 'count'
 	df_grouped = df.groupby([column])[column].count().reset_index(name='count').sort_values('count', ascending = False)
 	df_grouped = df_grouped.set_index(column)
 
@@ -42,6 +40,11 @@ def create_pie_for(title, short_title, column, chart_filename, row_filter = null
 
 	df_top_n_and_others = pd.concat([df_top_n, df_others])
 
+	# === Plot the pie chart, with an 'other' slice
+	fig, ax = plt.subplots(figsize=(15,7))
+	ax.set_title(title)
+	
+	# If a slice is less than MIN_PC %, then it will be aggregated into the 'Other' slice
 	MIN_PC = 3
 	autopct_min_5pc = lambda v: f'{v:1.0f}%' if v > MIN_PC else None
 	df_top_n_and_others.plot(kind="pie", autopct=autopct_min_5pc, colormap='tab20b', legend=True, title=short_title, y='count',  ax=ax, ylabel='')
@@ -51,6 +54,7 @@ def create_pie_for(title, short_title, column, chart_filename, row_filter = null
 	fig.savefig(pngFs1, bbox_inches="tight")
 
 def create_md_for(title, column, md_filename, row_filter = nullRowFilter):
+	# === Prepare the data, aggregating by 'count'
 	df_grouped = df.groupby([column])[column].count().reset_index(name='count').sort_values('count', ascending = False)
 	df_grouped = df_grouped.set_index(column)
 
@@ -60,13 +64,18 @@ def create_md_for(title, column, md_filename, row_filter = nullRowFilter):
 	df2 = df_grouped_filtered.reset_index()
 	column_int = column + '_int'
 	df2[column_int]  = df2[column].astype(int)
+	
+	# Add a percent column with calculated values:
 	df2['percent'] = (df2[column_int] / df2[column_int].sum()) * 100
 	df2_sorted = df2.sort_values(by=column_int, ascending=False)
 
 	columns_out = [column_int, 'percent']
 	df_to_output = df2_sorted[columns_out]
+	
+	# generate the markdown text:
 	markdown_text = df_to_output.set_index(column_int).to_markdown()
 
+	# save the markdown to a new file:
 	md_filepath = CHARTS_DIR + md_filename + ".md"
 	with open(md_filepath, 'w') as f:
 		f.write('# ' + title)
