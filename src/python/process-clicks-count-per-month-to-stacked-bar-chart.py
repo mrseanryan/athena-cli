@@ -26,8 +26,8 @@ print(normalized_data)
 
 # === Clicks per month ===
 ## aggregate and then unstack, so 1 series for each version
-df_BPs_unstacked = normalized_data.groupby(['year_and_month', 'version'])['clicks_int'].sum().unstack()
-print(df_BPs_unstacked)
+df_unstacked = normalized_data.groupby(['year_and_month', 'version'])['clicks_int'].sum().unstack()
+print(df_unstacked)
 
 # === PLOT ===
 # = stacked bar chart
@@ -36,7 +36,7 @@ ax.set_title("Clicks by Version")
 ax.set_xlabel('Year and Month')
 ax.set_ylabel('Clicks by version')
 
-df_BPs_unstacked.plot(ax=ax, colormap='tab20b', kind='bar', stacked=True)
+df_unstacked.plot(ax=ax, colormap='tab20b', kind='bar', stacked=True)
 pngFs1 = CHARTS_DIR + f"{DASHBOARD}-clicks-count-per-month.png"
 print("{0:s} (chart as image)".format(pngFs1))
 fig.savefig(pngFs1,bbox_inches="tight")
