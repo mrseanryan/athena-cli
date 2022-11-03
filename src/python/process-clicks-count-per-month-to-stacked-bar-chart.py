@@ -24,12 +24,12 @@ normalized_data = normalized_data[normalized_data["year_and_month"] != this_mont
 
 print(normalized_data)
 
-# === BPs per month ===
+# === Clicks per month ===
 ## unstack, so 1 series for each version
 df_BPs_unstacked = normalized_data.groupby(['year_and_month', 'version'])['clicks_int'].sum().unstack()
 print(df_BPs_unstacked)
 
-# === PLOT BPs ===
+# === PLOT ===
 # = stacked bar chart
 fig, ax = plt.subplots(figsize=(15,7))
 ax.set_title("Clicks by Version")
