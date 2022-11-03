@@ -55,7 +55,7 @@ def create_pie_for(title, short_title, column, chart_filename, row_filter = null
 	fig.savefig(pngFs1, bbox_inches="tight")
 
 def create_md_for(title, column, md_filename, row_filter = nullRowFilter):
-	# === Prepare the data, aggregating by 'count'
+	# === Prepare the data, counting and then aggregating by 'count'
 	df_grouped = df.groupby([column])[column].count().reset_index(name='count').sort_values('count', ascending = False)
 	df_grouped = df_grouped.set_index(column)
 
