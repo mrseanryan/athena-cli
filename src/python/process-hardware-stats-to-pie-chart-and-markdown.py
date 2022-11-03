@@ -30,6 +30,7 @@ def create_pie_for(title, short_title, column, chart_filename, row_filter = null
 	filtering = df_grouped.apply(row_filter, axis = 1)
 	df_grouped_filtered = df_grouped[filtering]
 
+	# Take the top 5 categories. All other categories are aggregated together into one 'other' group
 	TOP_N = 5
 	df_top_n = df_grouped_filtered[:TOP_N].copy()
 	df_others = pd.DataFrame(data = {
@@ -44,7 +45,7 @@ def create_pie_for(title, short_title, column, chart_filename, row_filter = null
 	fig, ax = plt.subplots(figsize=(15,7))
 	ax.set_title(title)
 	
-	# If a slice is less than MIN_PC %, then it will be aggregated into the 'Other' slice
+	# If a slice is greater than MIN_PC %, then show a label with its % value
 	MIN_PC = 3
 	autopct_min_5pc = lambda v: f'{v:1.0f}%' if v > MIN_PC else None
 	df_top_n_and_others.plot(kind="pie", autopct=autopct_min_5pc, colormap='tab20b', legend=True, title=short_title, y='count',  ax=ax, ylabel='')
