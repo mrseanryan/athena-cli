@@ -25,7 +25,7 @@ normalized_data = normalized_data[normalized_data["year_and_month"] != this_mont
 print(normalized_data)
 
 # === Clicks per month ===
-## unstack, so 1 series for each version
+## aggregate and then unstack, so 1 series for each version
 df_BPs_unstacked = normalized_data.groupby(['year_and_month', 'version'])['clicks_int'].sum().unstack()
 print(df_BPs_unstacked)
 
