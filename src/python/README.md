@@ -12,7 +12,7 @@ Charts are output to [charts](../../charts/) folder.
 - numpy 1.23.1
 - pandas 1.4.3
 
-`python3 -m pip install matplotlib==3.5.2 numpy==1.23.1 pandas==1.4.3 tabulate-0.9.0`
+`python3 -m pip install matplotlib==3.5.2 numpy==1.23.1 pandas==1.4.3 tabulate==0.9.0`
 
 ## Execution
 
